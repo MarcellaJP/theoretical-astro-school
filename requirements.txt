@@ -1,0 +1,9 @@
+astropy
+jupyter
+matplotlib
+numpy
+scipy
+seaborn
+Pillow
+colorcet
+requests

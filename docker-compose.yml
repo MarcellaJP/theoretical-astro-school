@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  notebook:
+    build: .
+    restart: unless-stopped
+    volumes:
+      - .:/ata-school
+    image: ata-school-image:3.1.4
+    container_name: ata-school-container
+    ports:
+      - '1337:1337'
