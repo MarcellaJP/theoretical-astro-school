@@ -7,3 +7,5 @@ seaborn
 Pillow
 colorcet
 requests
+tensorflow
+keras
