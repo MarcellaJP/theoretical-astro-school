@@ -9,3 +9,4 @@ colorcet
 requests
 tensorflow
 keras
+scikit-learn
