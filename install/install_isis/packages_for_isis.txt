@@ -1,0 +1,15 @@
+build-essential
+libreadline5-dev
+libncurses5
+libncurses5-dev
+libpng12-0
+libpng12-dev
+x-dev
+libx11-dev
+libxt-dev
+gfortran
+libcurl3
+libcurl3-dev
+libgtk2.0-dev
+libpcre3
+libpcre3-dev

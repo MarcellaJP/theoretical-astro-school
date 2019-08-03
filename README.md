@@ -6,11 +6,13 @@ Repository for code related to the [Advancing Theoretical Astrophysics summer sc
 
 I am using a Docker container to include the full environment (from OS to Python dependencies to code) used for this school. My host computer OS is Windows 10 and in the container I am running Debian Linux. I chose to use a Docker setup because I am experimenting with using and publishing Docker containers for completely reproducible science environments.
 
+This repository includes the tutorials used in the Advancing Theoretical Astrophysics summer school and the simulation output data necessary to run the tutorial notebooks. You can also rerun simulations in the Docker container to create new data to use in the tutorials (or make movies!). You can run Harmpi and ISIS in the container (see install notes).
+
 ## Install & use instructions
 
-To run this environment (and all the code in it), you only need to install the latest versions of `Docker` and `docker-compose`. 
+To run this Docker environment (and all the code in it), you only need to install the latest versions of `Docker` and `docker-compose`. 
 
-To start the Docker container (incl. serving Jupyter notebook at  `localhost:1337`), run the following command in the top level of this repository:
+To start the Docker container (incl. serving Jupyter notebook at  `localhost:8885`), run the following command in the top level of this repository:
 
 `docker-compose -f docker-compose.yml up --build`
 

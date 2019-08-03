@@ -11,7 +11,7 @@ WORKDIR "/ata-school"
 # Install required libraries and binaries here
 RUN set -ex && apt-get update && apt-get install -y --no-install-recommends \
     emacs vim nano \
-    curl \
+    curl wget \
     git \
     make cmake \
     gcc g++ gfortran \
@@ -20,6 +20,7 @@ RUN set -ex && apt-get update && apt-get install -y --no-install-recommends \
     mpich libmpich12 libmpich-dev mpich-doc \
     liblapack3 liblapack-dev libblas3 libblas-dev \
     xorg-dev perl-modules \
+    libgsl-dev \
     ffmpeg && \
     echo -e "\n\nSUCCESS: done installing all required system dependencies."
 
@@ -35,7 +36,7 @@ RUN set -ex \
 
 # Create folder for software
 Run set -ex && \
-    mkdir /sw
+    mkdir /sw/headas/heasoft-6.26.1
 
 # Install HARMPI
 RUN set -ex && \
@@ -52,6 +53,15 @@ RUN set -ex && \
     make -j8 && \
     echo -e "\n\nSUCCESS: done installing HARMPI."
 
+# Install Heasoft etc. for ISIS. This adds ~15 minutes to
+# building the Docker image.
+# If you don't intend to use ISIS, leave this uncommented.
+# If you'd like to use ISIS, uncomment these lines (L60-64):
+#RUN set -ex && \
+#    echo -e "\n\nInstalling ISIS and prerequisites. This will take a while." && \
+#    cd /install/install_isis && \
+#    make -j8 software && \
+#    echo -e "\n\nSUCCESS: done installing ISIS and prerequisites."
 
 HEALTHCHECK --interval=2m --timeout=3s \
     CMD curl --fail http://localhost:8885 || exit 1

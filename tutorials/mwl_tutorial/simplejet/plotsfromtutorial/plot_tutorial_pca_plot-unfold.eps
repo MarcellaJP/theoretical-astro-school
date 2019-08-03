@@ -1,0 +1,139 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: PGPLOT PostScript plot
+%%Creator: PGPLOT
+%%CreationDate: 15-Jul-2019 12:00
+%%BoundingBox: (atend)
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gs /gsave load def
+/gr /grestore  load def
+/L {moveto rlineto currentpoint stroke moveto} bind def
+/C {rlineto currentpoint stroke moveto} bind def
+/D {moveto 0 0 rlineto currentpoint stroke moveto} bind def
+/SLW {5 mul setlinewidth} bind def
+/SCF /pop load def
+/BP {newpath moveto} bind def
+/LP /rlineto load def
+/EP {rlineto closepath eofill} bind def
+/MB {gsave translate MFAC dup scale 1 setlinewidth 2 setlinecap 0 setlinejoin newpath} bind def
+/ME /grestore load def
+/CC {0 360 arc stroke} bind def
+/FC {0 360 arc fill} bind def
+% font stuff
+/pgscale 0.072 def
+% ISOLATIN encoding with built in linespacing definitions.
+% from tinydict by David Byram-Wigfield, http://www.capella.demon.co.uk
+% fontsize default setting.
+/FS	{ /fs exch def } def	 12 FS
+% linespacing ratio to fontsize: 1.3 is my default
+/LR {/lr exch def } def 1.3 LR
+/LG { /lg exch def } def   12 LG
+% calculate linespacing from chosen fontsize
+/F { exch dup lr mul LG dup FS exch findfont exch scalefont setfont } def
+/ISOFONT { findfont dup length dict begin { 1 index /FID ne {def} {pop pop}
+ifelse } forall /Encoding ISOLatin1Encoding def currentdict end /tmpfont
+exch definefont exch dup lr mul LG dup FS
+ scalefont setfont }  def
+/half { fs 2 div } bind def % half linespacing
+/quart { fs 4 div } bind def % quarter linespacing
+% vertical kerning: e.g. 5 v or -10 v
+/v { 0 exch rmoveto } def
+% horizontal kerning: e.g. 5 h or -10 h
+/h { 0 rmoveto } def
+% move up half the linespacing
+/up { half v } def
+% move down half the linespacing
+/dn { half neg v } def
+/TRL {/Times-Roman ISOFONT} bind def
+/TBL {/Times-Bold ISOFONT} bind def
+/TIL {/Times-Italic ISOFONT} bind def
+/TBIL {/Times-BoldItalic ISOFONT} bind def
+/HVL  {/Helvetica ISOFONT} bind def
+/HOL  {/Helvetica-Oblique ISOFONT} bind def
+/HNL  {/Helvetica-Narrow ISOFONT} bind def
+/HNBL  {/Helvetica-NarrowBold ISOFONT} bind def
+/HBL  {/Helvetica-Bold ISOFONT} bind def
+/ZL  {/Zapf-Chancery-MediumItalic ISOFONT} bind def
+/SL { /Symbol F } def
+/RS{findfont exch scalefont setfont moveto dup stringwidth neg exch neg exch rmoveto show} bind def
+/TR  { fs TRL   moveto rotate show currentpoint } def
+/TB  { fs TBL   moveto rotate show currentpoint } def
+/TI  { fs TIL   moveto rotate show currentpoint } def
+/TBI { fs TBIL  moveto rotate show currentpoint } def
+/HV  { fs HVL   moveto rotate show currentpoint } def
+/H0  { fs HOL   moveto rotate show currentpoint } def
+/HB  { fs HBL   moveto rotate show currentpoint } def
+/HN  { fs HNL   moveto rotate show currentpoint } def
+/HNB { fs HNBL  moveto rotate show currentpoint } def
+/Z   { fs ZL    moveto rotate show currentpoint } def
+/S   { fs SL    moveto rotate show currentpoint } def
+/TRC  { fs TRL   show currentpoint } def
+/TBC  { fs TBL   show currentpoint } def
+/TIC  { fs TIL   show currentpoint } def
+/TBIC { fs TBIL  show currentpoint } def
+/HVC  { fs HVL   show currentpoint } def
+/H0C  { fs HOL   show currentpoint } def
+/HNBC { fs HNBL  show currentpoint } def
+/HBC  { fs HBL   show currentpoint } def
+/HNC  { fs HNL   show currentpoint } def
+/ZC   { fs ZL    show currentpoint } def
+/SC   { fs SL    show currentpoint } def
+%%EndProlog
+0.000 0.000 0.000 setrgbcolor
+
+%%Page: 1 1
+%%BeginPageSetup
+/PGPLOT save def
+pgscale pgscale scale
+8149 250 translate 90 rotate
+1 setlinejoin 1 setlinecap 1 SLW 1 SCF
+%%EndPageSetup
+%%PageBoundingBox: (atend)
+0.000 0.000 0.000 setrgbcolor 1 SLW 8909 0 795 780 L 0 6239 C -8909 0 C 0 -6239 C 0 45 1212 780 L 0 45 2412 780 L 0 45 3343 780 L
+0 45 4103 780 L 0 45 4746 780 L 0 45 5303 780 L 0 45 5794 780 L 0 90 6234 780 L 0 45 9125 780 L 0 45 1212 6974 L 0 45 2412 6974 L
+0 45 3343 6974 L 0 45 4103 6974 L 0 45 4746 6974 L 0 45 5303 6974 L 0 45 5794 6974 L 0 90 6234 6929 L 0 45 9125 6974 L
+ 15.60  pgscale div FS gs   0.00       6113.560        545.930 moveto rotate (10) HVC gr
+ 15.60  pgscale div FS gs   0.00       3282.744        545.930 moveto rotate (5) HVC gr
+ 15.60  pgscale div FS gs   0.00       9004.429        545.930 moveto rotate (20) HVC gr
+45 0 795 1465 L 45 0 795 2029 L 45 0 795 2466 L 45 0 795 2823 L 45 0 795 3125 L 45 0 795 3387 L 45 0 795 3618 L 90 0 795 3824 L
+45 0 795 5182 L 45 0 795 5977 L 45 0 795 6541 L 45 0 795 6978 L 45 0 9659 1465 L 45 0 9659 2029 L 45 0 9659 2466 L 45 0 9659 2823 L
+45 0 9659 3125 L 45 0 9659 3387 L 45 0 9659 3618 L 90 0 9614 3824 L 45 0 9659 5182 L 45 0 9659 5977 L 45 0 9659 6541 L
+45 0 9659 6978 L
+ 15.60  pgscale div FS gs  90.00        658.974       3613.587 moveto rotate (0.01) HVC gr
+ 15.60  pgscale div FS gs  90.00        658.974       2134.849 moveto rotate (5) HVC (\32710) HVC   9.36 pgscale div FS up (-3) HVC dn  15.60 pgscale div FS gr
+ 15.60  pgscale div FS gs  90.00        658.974       4971.785 moveto rotate (0.02) HVC gr
+ 15.60  pgscale div FS gs  90.00        658.974       6767.224 moveto rotate (0.05) HVC gr
+ 15.60  pgscale div FS gs   0.00       4570.246        155.980 moveto rotate (Energy \(keV\)) TRC gr
+ 15.60  pgscale div FS gs  90.00        366.512       2730.914 moveto rotate (Photons cm) TRC   9.36 pgscale div FS up (-2) TRC dn  15.60 pgscale div FS ( s) TRC   9.36 pgscale div FS up (-1) TRC dn  15.60 pgscale div FS ( keV) TRC   9.36 pgscale div FS up (-1) TRC dn  15.60 pgscale div FS gr
+1.000 1.000 1.000 setrgbcolor
+/M0 {MB -6 -6 moveto 0 12 rlineto 12 0 rlineto
+0 -12 rlineto closepath stroke ME} bind def
+/MFAC      0.600 def
+967 900 M0 9532 6899 M0
+1.000 1.000 0.000 setrgbcolor 0 -27 1260 6899 L 0 -26 1791 6452 L 0 -25 2262 6072 L 0 -25 2686 5744 L 0 -26 3071 5515 L
+0 -26 3423 5263 L 0 -27 3748 5057 L 0 -27 4050 4878 L 0 -28 4332 4694 L 0 -28 4596 4474 L 0 -29 4844 4233 L 0 -30 5079 4005 L
+0 -31 5301 3812 L 0 -32 5512 3624 L 0 -33 5713 3473 L 0 -34 5905 3326 L 0 -36 6089 3192 L 0 -37 6265 3084 L 0 -38 6434 2939 L
+0 -40 6596 2847 L 0 -41 6753 2743 L 0 -43 6904 2681 L 0 -45 7049 2532 L 0 -47 7190 2455 L 0 -49 7327 2401 L 0 -51 7459 2302 L
+0 -55 7587 2158 L 0 -56 7712 2169 L 0 -61 7832 1984 L 0 -63 7950 1962 L 0 -66 8065 1897 L 0 -70 8176 1766 L 0 -75 8285 1709 L
+0 -78 8391 1660 L 0 -84 8494 1538 L 0 -85 8595 1602 L 0 -90 8693 1473 L 0 -94 8790 1410 L 0 -98 8884 1367 L 0 -103 8976 1316 L
+0 -111 9067 1162 L 0 -115 9155 1144 L 0 -119 9242 1158 L 0 -121 9327 1213 L 0 -132 9410 1032 L 0 -134 9492 1078 L
+1.000 0.500 0.000 setrgbcolor
+/M4 {MB 0 0 7 CC ME} bind def
+/MFAC      5.999 def
+1260 6886 M4 1791 6439 M4 2262 6060 M4 2686 5731 M4 3071 5502 M4 3423 5250 M4 3748 5044 M4 4050 4865 M4 4332 4680 M4 4596 4460 M4
+4844 4219 M4 5079 3990 M4 5301 3797 M4 5512 3608 M4 5713 3457 M4 5905 3309 M4 6089 3174 M4 6265 3065 M4 6434 2920 M4 6596 2827 M4
+6753 2723 M4 6904 2659 M4 7049 2509 M4 7190 2432 M4 7327 2377 M4 7459 2277 M4 7587 2131 M4 7712 2141 M4 7832 1954 M4 7950 1931 M4
+8065 1864 M4 8176 1731 M4 8285 1672 M4 8391 1621 M4 8494 1496 M4 8595 1560 M4 8693 1428 M4 8790 1364 M4 8884 1319 M4 8976 1265 M4
+9067 1107 M4 9155 1087 M4 9242 1100 M4 9327 1154 M4 9410 967 M4 9492 1012 M4
+0.000 0.000 0.000 setrgbcolor
+PGPLOT restore showpage
+%%PageTrailer
+%%PageBoundingBox: 60 -5 579 718
+
+%%Trailer
+%%BoundingBox: 60 -5 579 718
+%%DocumentFonts: Times-Roman Helvetica
+%%Pages: 1
+%%EOF

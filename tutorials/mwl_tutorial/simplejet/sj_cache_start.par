@@ -1,0 +1,18 @@
+simplejet_cache
+ idx  param                  tie-to  freeze         value         min         max
+  1  simplejet_cache(1).norm     0     1                1           0     1000000  
+  2  simplejet_cache(1).mbh      0     1                8           1       1e+09  msun
+  3  simplejet_cache(1).jetrat   0     0            0.009       1e-07           1  L_edd
+  4  simplejet_cache(1).pspec    0     0                2         1.7           4  
+  5  simplejet_cache(1).zsh      0     0              300           5       10000  r_g
+  6  simplejet_cache(1).r0       0     0                3           2         100  r_g
+  7  simplejet_cache(1).hratio   0     1              1.5         0.1         100  
+  8  simplejet_cache(1).incl     0     1               40           0          90  deg
+  9  simplejet_cache(1).eltemp   0     0            2e+10       2e+09       5e+11  K
+ 10  simplejet_cache(1).plfrac   0     0             0.75      0.0001           1  
+ 11  simplejet_cache(1).dkpc     0     1                1         0.1       10000  kpc
+ 12  simplejet_cache(1).comsw    0     1                0           0           1  
+ 13  simplejet_cache(1).plotsw   0     1                1           0           1  
+ 14  simplejet_cache(1).fsc      0     0             0.01       1e-07       0.036  
+ 15  simplejet_cache(1).zmax     0     1             13.5          13          16  lg cm
+ 16  simplejet_cache(1).equip    0     0                2         0.1         100  
